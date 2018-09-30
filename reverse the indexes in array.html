@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var array = [5,6,2,4,8,454,155,5];
+    var first = 0;
+    var last = array.length - 1;
+    while (first<last){
+        var intermediate;
+        intermediate = array[first];
+        array[first] = array[last];
+        array[last] = intermediate;
+        first++;
+        last--;
+    } document.write(array);
+</script>
+</body>
+</html>
